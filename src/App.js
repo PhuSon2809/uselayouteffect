@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Memo from "./components/Memo";
+import TodoAppWithUseReducer from "./components/TodoAppWithUseReducer";
+import UseContext from "./components/UseContext";
+import UseLayoutEffect from "./components/UseLayoutEffect";
+import UseMemo from "./components/UseMemo";
+import UseReducer from "./components/UseReducer";
+import UseRef from "./components/UseRef";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UseLayoutEffect />
+      <UseRef />
+      <Memo />
+      <UseMemo />
+      <UseReducer />
+      <TodoAppWithUseReducer />
+      <UseContext />
     </div>
   );
 }
